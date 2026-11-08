@@ -1,7 +1,7 @@
 # Vendor skills and MCP servers, pinned to commits (taken 2026-11-08).
 # Depend on this repo to get all of it, or copy single lines into a project's apm.yml.
 name: agent-hub
-version: 2.0.0
+version: 2.1.0
 description: Pinned vendor skills and MCP servers
 includes: auto
 dependencies:
@@ -67,7 +67,21 @@ dependencies:
     - supabase/agent-skills/skills/supabase#c9be0e931b7930f7d02126d04774d904c381e7d7
     - supabase/agent-skills/skills/supabase-postgres-best-practices#c9be0e931b7930f7d02126d04774d904c381e7d7
     # vercel-labs/agent-skills
-    - vercel-labs/agent-skills/skills/react-best-practices#1a2c79d4e6c4a2283dc2c614b6538cbe1ed5ca62
+    - git: https://github.com/vercel-labs/agent-skills.git
+      path: skills/react-best-practices
+      ref: 1a2c79d4e6c4a2283dc2c614b6538cbe1ed5ca62
+      alias: vercel-react-best-practices
+    # lemomo-ai/lemo-opuscar
+    - lemomo-ai/lemo-opuscar/plugin/skills/lemo-opuscar#143f387ad774525dc9abc0ff05fb5f4bfbaa5f02
+    # Panniantong/Agent-Reach
+    - git: https://github.com/Panniantong/Agent-Reach.git
+      path: agent_reach/skill
+      ref: c70ae6da5d39bc90e09ad2ae0575ccc89f31e284
+      alias: agent-reach
+    # wheresryan22/anatomy
+    - wheresryan22/anatomy#1482e8469b0a9e0d8cc18ea2740a01423d29ae80
+    # heydamir/unslop
+    - heydamir/unslop/skills/unslop#97daa3eb365670ea3f87ed85356cbfcee18105a5
   mcp:
     - name: context7
       registry: false
@@ -75,3 +89,15 @@ dependencies:
       url: https://mcp.context7.com/mcp
       headers:
         Authorization: "Bearer ${CONTEXT7_API_KEY}"
+    - name: vercel
+      registry: false
+      transport: http
+      url: https://mcp.vercel.com
+    - name: supabase
+      registry: false
+      transport: http
+      url: https://mcp.supabase.com/mcp
+    - name: figma
+      registry: false
+      transport: http
+      url: https://mcp.figma.com/mcp

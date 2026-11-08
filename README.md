@@ -14,7 +14,7 @@ version: 0.1.0
 targets: [claude, codex]
 dependencies:
   apm:
-    - emalgholzad/agent-hub#v2.0.0
+    - emalgholzad/agent-hub#v2.1.0
 ```
 
 ```bash
@@ -24,7 +24,7 @@ apm install
 Or copy only the lines you need from [`apm.yml`](apm.yml) into your project's
 `apm.yml`.
 
-## Skills (51)
+## Skills (55)
 
 ### [tt-a1i/archify](https://github.com/tt-a1i/archify)
 
@@ -132,11 +132,49 @@ Or copy only the lines you need from [`apm.yml`](apm.yml) into your project's
 | --- | --- |
 | `vercel-react-best-practices` | React and Next.js performance optimization guidelines from Vercel Engineering. |
 
+### [lemomo-ai/lemo-opuscar](https://github.com/lemomo-ai/lemo-opuscar)
+
+| Skill | Description |
+| --- | --- |
+| `lemo-opuscar` | Direct and produce a short film made entirely in code, in one of 66 styles. |
+
+### [Panniantong/Agent-Reach](https://github.com/Panniantong/Agent-Reach)
+
+| Skill | Description |
+| --- | --- |
+| `agent-reach` | Read-only search and reading across Twitter/X, Reddit, YouTube, GitHub and more. |
+
+### [wheresryan22/anatomy](https://github.com/wheresryan22/anatomy)
+
+| Skill | Description |
+| --- | --- |
+| `anatomy` | Build detailed, interactive isometric SVG figures that explain a technical idea as a physical object. |
+
+### [heydamir/unslop](https://github.com/heydamir/unslop)
+
+| Skill | Description |
+| --- | --- |
+| `unslop` | Turn vibecoded, AI-looking UI into a designed interface with its own character. |
+
 ## MCP servers
 
 | Server | Notes |
 | --- | --- |
 | `context7` | Library documentation. Set `CONTEXT7_API_KEY` in your environment. |
+| `vercel` | Vercel projects, deployments and logs. Sign in with OAuth on first use. |
+| `supabase` | Supabase, account level (no project set). Sign in with OAuth on first use. |
+| `figma` | Figma designs. Sign in with OAuth on first use. |
+
+## Notes
+
+- `lemo-opuscar` clones its library to `~/lemo-opuscar` and runs `npm install` the first time you use it.
+- `agent-reach` needs the `agent-reach` CLI. Install it from GitHub following its
+  [install guide](https://raw.githubusercontent.com/Panniantong/Agent-Reach/main/docs/install.md),
+  not from PyPI: the PyPI package with that name is a different project.
+- `anatomy` is about 27 MB, because it ships its examples.
+- `supabase` here has no project set. A project that needs one defines its own
+  `supabase` server with `project_ref` in its own config.
+- `unslop` is CC BY 4.0: keep its credit if you copy or adapt it.
 
 ## Update
 
