@@ -1,4 +1,4 @@
-# agent-hub
+# Agent Hub
 
 Pinned vendor skills and MCP servers for Claude Code and Codex, defined in one
 [APM](https://microsoft.github.io/apm/) manifest: [`apm.yml`](apm.yml).
