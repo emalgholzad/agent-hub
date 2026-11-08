@@ -1,4 +1,0 @@
-name: git-workflow
-version: 1.0.0
-description: Ship branches and PRs, implement issues, optionally in a worktree
-includes: auto

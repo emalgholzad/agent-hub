@@ -1,8 +1,7 @@
-# Everything vendor + MCP in one place. Depend on this repo to get all of it,
-# or copy the lines you want into a project's apm.yml.
-# Pins were taken on 2026-11-08; see VENDOR.md.
+# Vendor skills and MCP servers, pinned to commits (taken 2026-11-08).
+# Depend on this repo to get all of it, or copy single lines into a project's apm.yml.
 name: agent-hub
-version: 1.1.0
+version: 2.0.0
 description: Pinned vendor skills and MCP servers
 includes: auto
 dependencies:
