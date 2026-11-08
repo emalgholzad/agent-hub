@@ -19,6 +19,15 @@ Requires APM 0.35+ (`brew install apm`).
 
 Vendor skills from other authors are listed in [VENDOR.md](VENDOR.md).
 
+The root [apm.yml](apm.yml) contains all vendor skills and the MCP server. Depend
+on the whole repo to get everything, or copy single lines from it:
+
+```yaml
+dependencies:
+  apm:
+    - emalgholzad/agent-hub#v1.1.0
+```
+
 ## Use it in a project
 
 ```yaml

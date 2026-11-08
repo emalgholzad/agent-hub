@@ -1,0 +1,78 @@
+# Everything vendor + MCP in one place. Depend on this repo to get all of it,
+# or copy the lines you want into a project's apm.yml.
+# Pins were taken on 2026-11-08; see VENDOR.md.
+name: agent-hub
+version: 1.1.0
+description: Pinned vendor skills and MCP servers
+includes: auto
+dependencies:
+  apm:
+    # tt-a1i/archify
+    - tt-a1i/archify/archify#11b0d6031853bdae89eed57e7979aabbf0034097
+    # mattpocock/skills
+    - mattpocock/skills/skills/engineering/ask-matt#4ae2317ddb22b046e26455e4f9c9b3aaaf62212d
+    - mattpocock/skills/skills/in-progress/chief-of-staff#4ae2317ddb22b046e26455e4f9c9b3aaaf62212d
+    - mattpocock/skills/skills/in-progress/claude-handoff#4ae2317ddb22b046e26455e4f9c9b3aaaf62212d
+    - mattpocock/skills/skills/engineering/code-review#4ae2317ddb22b046e26455e4f9c9b3aaaf62212d
+    - mattpocock/skills/skills/engineering/codebase-design#4ae2317ddb22b046e26455e4f9c9b3aaaf62212d
+    - mattpocock/skills/skills/engineering/diagnosing-bugs#4ae2317ddb22b046e26455e4f9c9b3aaaf62212d
+    - mattpocock/skills/skills/engineering/domain-modeling#4ae2317ddb22b046e26455e4f9c9b3aaaf62212d
+    - mattpocock/skills/skills/misc/git-guardrails-claude-code#4ae2317ddb22b046e26455e4f9c9b3aaaf62212d
+    - mattpocock/skills/skills/productivity/grill-me#4ae2317ddb22b046e26455e4f9c9b3aaaf62212d
+    - mattpocock/skills/skills/engineering/grill-with-docs#4ae2317ddb22b046e26455e4f9c9b3aaaf62212d
+    - mattpocock/skills/skills/productivity/grilling#4ae2317ddb22b046e26455e4f9c9b3aaaf62212d
+    - mattpocock/skills/skills/productivity/handoff#4ae2317ddb22b046e26455e4f9c9b3aaaf62212d
+    - mattpocock/skills/skills/engineering/implement#4ae2317ddb22b046e26455e4f9c9b3aaaf62212d
+    - mattpocock/skills/skills/engineering/implement-spec#4ae2317ddb22b046e26455e4f9c9b3aaaf62212d
+    - mattpocock/skills/skills/engineering/improve-codebase-architecture#4ae2317ddb22b046e26455e4f9c9b3aaaf62212d
+    - mattpocock/skills/skills/in-progress/loop-me#4ae2317ddb22b046e26455e4f9c9b3aaaf62212d
+    - mattpocock/skills/skills/misc/migrate-to-shoehorn#4ae2317ddb22b046e26455e4f9c9b3aaaf62212d
+    - mattpocock/skills/skills/engineering/pr#4ae2317ddb22b046e26455e4f9c9b3aaaf62212d
+    - mattpocock/skills/skills/engineering/prototype#4ae2317ddb22b046e26455e4f9c9b3aaaf62212d
+    - mattpocock/skills/skills/engineering/research#4ae2317ddb22b046e26455e4f9c9b3aaaf62212d
+    - mattpocock/skills/skills/engineering/retro#4ae2317ddb22b046e26455e4f9c9b3aaaf62212d
+    - mattpocock/skills/skills/misc/scaffold-exercises#4ae2317ddb22b046e26455e4f9c9b3aaaf62212d
+    - mattpocock/skills/skills/engineering/setup-matt-pocock-skills#4ae2317ddb22b046e26455e4f9c9b3aaaf62212d
+    - mattpocock/skills/skills/misc/setup-pre-commit#4ae2317ddb22b046e26455e4f9c9b3aaaf62212d
+    - mattpocock/skills/skills/in-progress/setup-ts-deep-modules#4ae2317ddb22b046e26455e4f9c9b3aaaf62212d
+    - mattpocock/skills/skills/engineering/tdd#4ae2317ddb22b046e26455e4f9c9b3aaaf62212d
+    - mattpocock/skills/skills/productivity/teach#4ae2317ddb22b046e26455e4f9c9b3aaaf62212d
+    - mattpocock/skills/skills/productivity/to-questionnaire#4ae2317ddb22b046e26455e4f9c9b3aaaf62212d
+    - mattpocock/skills/skills/engineering/to-spec#4ae2317ddb22b046e26455e4f9c9b3aaaf62212d
+    - mattpocock/skills/skills/engineering/to-tickets#4ae2317ddb22b046e26455e4f9c9b3aaaf62212d
+    - mattpocock/skills/skills/engineering/triage#4ae2317ddb22b046e26455e4f9c9b3aaaf62212d
+    - mattpocock/skills/skills/productivity/wait-what#4ae2317ddb22b046e26455e4f9c9b3aaaf62212d
+    - mattpocock/skills/skills/engineering/wayfinder#4ae2317ddb22b046e26455e4f9c9b3aaaf62212d
+    - mattpocock/skills/skills/engineering/wizard#4ae2317ddb22b046e26455e4f9c9b3aaaf62212d
+    - mattpocock/skills/skills/in-progress/writing-beats#4ae2317ddb22b046e26455e4f9c9b3aaaf62212d
+    - mattpocock/skills/skills/productivity/writing-for-agents#4ae2317ddb22b046e26455e4f9c9b3aaaf62212d
+    - mattpocock/skills/skills/in-progress/writing-fragments#4ae2317ddb22b046e26455e4f9c9b3aaaf62212d
+    - mattpocock/skills/skills/in-progress/writing-shape#4ae2317ddb22b046e26455e4f9c9b3aaaf62212d
+    # latent-spaces/brag
+    - latent-spaces/brag/skills/brag-slim#669ab9286aa28b6c3ee30e75f181ee74319d012a
+    # netresearch/context7-skill
+    - netresearch/context7-skill/skills/context7#4d6d28c6080dfc22cb29523fac8aaeca14e93dd8
+    # fallow-rs/fallow-skills
+    - fallow-rs/fallow-skills/fallow/skills/fallow#913a7277e0b776ebcaa5bbb6f4ba94169c144911
+    - fallow-rs/fallow-skills/fallow/skills/fallow-review#913a7277e0b776ebcaa5bbb6f4ba94169c144911
+    # vercel-labs/skills
+    - vercel-labs/skills/skills/find-skills#d3701c11b1101251af14c9d148f026e1a47ebe17
+    # anthropics/skills
+    - anthropics/skills/skills/frontend-design#2c5958ecac7cee2b583967a2c4981d0f4a75c579
+    # szkocot/andrej-karpathy-skills
+    - szkocot/andrej-karpathy-skills/skills/karpathy-guidelines#64723a49ea6117894304eb491f0d32a60570bf45
+    # humanlayer/skills
+    - humanlayer/skills/plugins/show-me/skills/show-me#4d69d20f6e9b57b4fcf0d501ccfb1be961f0f329
+    - humanlayer/skills/plugins/visual-pr/skills/visual-pr#4d69d20f6e9b57b4fcf0d501ccfb1be961f0f329
+    # supabase/agent-skills
+    - supabase/agent-skills/skills/supabase#c9be0e931b7930f7d02126d04774d904c381e7d7
+    - supabase/agent-skills/skills/supabase-postgres-best-practices#c9be0e931b7930f7d02126d04774d904c381e7d7
+    # vercel-labs/agent-skills
+    - vercel-labs/agent-skills/skills/react-best-practices#1a2c79d4e6c4a2283dc2c614b6538cbe1ed5ca62
+  mcp:
+    - name: context7
+      registry: false
+      transport: http
+      url: https://mcp.context7.com/mcp
+      headers:
+        Authorization: "Bearer ${CONTEXT7_API_KEY}"
