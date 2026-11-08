@@ -1,0 +1,5 @@
+name: hooks-oxc-format
+version: 1.0.0
+description: Run oxlint --fix and oxfmt on every file Claude edits (Claude Code only; needs oxlint and oxfmt in the project)
+includes: auto
+targets: [claude]

@@ -1,0 +1,5 @@
+name: hooks-fallow-gate
+version: 1.0.0
+description: Block git commit and push when `fallow audit` fails (Claude Code only; skips if fallow is not installed)
+includes: auto
+targets: [claude]
